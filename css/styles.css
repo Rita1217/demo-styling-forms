@@ -2,6 +2,7 @@
     --cream: #e5e1db;
     --yellow: #cfb450;
     --grey: #6b6267;
+    --lt-grey: #d2cfd1;
 }
 
 body {
@@ -11,6 +12,10 @@ body {
 header {
     background-color: var(--cream);
     padding: 0 1rem;
+}
+
+section {
+    padding: 1rem;
 }
 
 nav {
@@ -43,16 +48,59 @@ input[id=searchbar] {
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: center left 5px;
+    padding-left: 40px;
 }
 
 
+.login-form {
+    border: 1px solid var(--lt-grey);
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px var(--lt-grey);
+}
 
+.login-form label {
+    display: block;
+}
 
+.login-form > div {
+    margin-bottom: 0.75rem;
+}
 
+input[id=email],
+input[id=password] {
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--lt-grey);
+}
 
+input[type=submit] {
+    background-color: var(--yellow);
+    padding: 0.25rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    border: 2px solid var(--yellow);
+}
 
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
 
+*:focus {
+    outline: none;
+}
 
+.login-form input[id=email]:invalid,
+.login-form input[id=password]:invalid {
+    outline: 2px solid tomato;
+}
+
+.login-form input[id=email]:valid,
+.login-form input[id=password]:valid {
+    outline: 2px solid green;
+}
 
 
 

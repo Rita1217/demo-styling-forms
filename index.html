@@ -33,5 +33,25 @@
         </form>
     </header>
     
+
+    <section>
+        <h2>Log In</h2>
+        <form class="login-form" action="#" method="post">
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" required autocomplete="off" minlength="8" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" placeholder="Min of 8 Characters, Uppercase, Lowercase, & Number required">
+            </div>
+            <div>
+                <input type="submit" value="Sign In">
+            </div>
+        </form>
+    </section>
+
+
+
 </body>
 </html>
